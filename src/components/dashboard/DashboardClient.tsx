@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import DashboardHeader from "./DashboardHeader";
 import VehicleList from "./VehicleList";
