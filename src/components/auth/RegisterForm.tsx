@@ -33,8 +33,8 @@ export default function RegisterForm() {
     setFormError("");
 
     try {
-      await AuthService.login(data);
-      router.push("/dashboard");
+      await AuthService.register(data);
+      router.push("/login");
     } catch (error: any) {
       setFormError(error.message || "Login failed. Please try again.");
     } finally {
@@ -99,7 +99,7 @@ export default function RegisterForm() {
         disabled={loading}
         className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
       >
-        {loading ? "Entrando..." : "Entrar"}
+        {loading ? "Entrando..." : "Cadastrar"}
       </button>
     </form>
   );
