@@ -13,7 +13,11 @@ type Vehicle = {
   active: boolean;
 };
 
-export default function VehicleList() {
+type Props = {
+  onChange?: () => void;
+};
+
+export default function VehicleList({ onChange }: Props) {
   const [vehicles, setVehicles] = useState<Vehicle[]>([]);
   const [vehicleCount, setVehicleCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
@@ -62,6 +66,7 @@ export default function VehicleList() {
         active: !vehicle.active,
       });
       fetchVehicles();
+      onChange?.();
       toast.success(
         vehicle.active
           ? "Veículo arquivado com sucesso!"
@@ -77,6 +82,7 @@ export default function VehicleList() {
     try {
       await VehicleService.deleteVehicle(vehicleId);
       fetchVehicles();
+      onChange?.();
       toast.success("Veículo deletado com sucesso!");
     } catch (err: any) {
       console.error("Error deleting vehicle:", err);

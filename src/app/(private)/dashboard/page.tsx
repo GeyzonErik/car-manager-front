@@ -1,6 +1,4 @@
-import DashboardHeader from "@/components/dashboard/DashboardHeader";
-import VehicleList from "@/components/dashboard/VehicleList";
-import VehicleSummary from "@/components/dashboard/VehicleSummary";
+import DashboardClient from "@/components/dashboard/DashboardClient";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -13,11 +11,5 @@ export default async function DashboardPage() {
     redirect("/login");
   }
 
-  return (
-    <div>
-      <DashboardHeader />
-      <VehicleSummary />
-      <VehicleList />
-    </div>
-  );
+  return <DashboardClient />;
 }

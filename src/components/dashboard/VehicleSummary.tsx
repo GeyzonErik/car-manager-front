@@ -4,7 +4,11 @@ import { VehicleService } from "@/services/vehicle.service";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
-export default function VehicleSummary() {
+type Props = {
+  refresh?: number;
+};
+
+export default function VehicleSummary({ refresh }: Props) {
   const [summary, setSummary] = useState<{
     total: number;
     active: number;
@@ -25,7 +29,7 @@ export default function VehicleSummary() {
           inactive: 0,
         });
       });
-  }, []);
+  }, [refresh]);
 
   if (!summary) return <div>Loading...</div>;
 
