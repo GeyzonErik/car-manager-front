@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://epta-car-back-1.onrender.com/api/v1/:path*"
+    }
+  ]
+}
