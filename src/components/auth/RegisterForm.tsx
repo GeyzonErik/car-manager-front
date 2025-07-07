@@ -99,7 +99,7 @@ export default function RegisterForm() {
         disabled={loading}
         className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
       >
-        {loading ? "Entrando..." : "Cadastrar"}
+        {loading ? "Cadastrando..." : "Cadastrar"}
       </button>
     </form>
   );
