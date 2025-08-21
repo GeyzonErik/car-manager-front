@@ -1,4 +1,4 @@
-# EPTA Car - Sistema de Gestão de Veículos
+# Car Manager - Sistema de Gestão de Veículos
 
 Um sistema web moderno para gerenciamento de veículos, desenvolvido com Next.js 15 e TypeScript.
 
@@ -14,7 +14,7 @@ O EPTA Car é uma aplicação web que permite:
 
 ## 🌐 Acesso Online
 
-**Visualize o projeto em:** [epta-car.vercel.app](https://epta-car.vercel.app/)
+**Visualize o projeto em:** [car-manager.vercel.app](car-manager-front.vercel.app)
 
 ## 🛠️ Tecnologias Utilizadas
 
