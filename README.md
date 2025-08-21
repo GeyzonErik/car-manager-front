@@ -4,7 +4,7 @@ Um sistema web moderno para gerenciamento de veículos, desenvolvido com Next.js
 
 ## 🚗 Sobre o Projeto
 
-O EPTA Car é uma aplicação web que permite:
+A aplicação web que permite:
 
 - **Cadastro e gestão de veículos**: Adicionar, editar e remover veículos da frota
 - **Controle de status**: Ativar/desativar veículos conforme necessário
@@ -30,7 +30,7 @@ O EPTA Car é uma aplicação web que permite:
 1. **Clone o repositório**
    ```bash
    git clone [url-do-repositorio]
-   cd epta-car-front
+   cd car-manager-front
    ```
 
 2. **Instale as dependências**
